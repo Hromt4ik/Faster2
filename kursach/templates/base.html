@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    {%load static %}
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Быстрее света{% endblock title %}</title>
+</head>
+
+<body>
+    <header>
+        <nav class="container header-nav">
+            <a href="#">
+                <img src="{% static "image/logo.png" %}" alt="лого" height="70" width="70">
+            </a>
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="#" style="color: #FFFFFF">Услуги</a></li>
+                <li class="nav-list-item"><a href="#" style="color: #FFFFFF">Контакты</a></li>
+            </ul>
+            <div class="signin">
+                <a href="#" style="color: #FFFFFF">Войти</a>
+            </div>
+
+        </nav>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+
+    <footer>
+        <div class="container header-nav">
+            <a href="#">
+                <img src="{% static "image/logo.png" %}" alt="лого" height="70" width="70">
+            </a>
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="#" style="color: #FFFFFF">Услуги</a></li>
+                <li class="nav-list-item"><a href="#" style="color: #FFFFFF">Контакты</a></li>
+            </ul>
+            <p class="copiright">&copy; "Быстрее света" 2023</p>
+        </div>
+    </footer>
+</body>
+
+</html>
